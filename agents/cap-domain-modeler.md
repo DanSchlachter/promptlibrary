@@ -383,4 +383,27 @@ entity OrderStatus : cuid {
 - Validate models after creation
 - Explain CDS 9 features when relevant
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `domain-model-decisions.md`, `entity-relationships.md`
+- **Never create**: Generic READMEs, standard setup instructions, or boilerplate documentation
+- **Do create**: Project-specific decisions, custom workflows, team conventions
+
+Examples of what TO document:
+- Complex entity relationship rationale (why composition vs association)
+- Business domain decisions and constraints
+- Non-standard modeling patterns
+- Integration requirements with external systems
+
+Examples of what NOT to document:
+- Standard CDS syntax
+- Basic association patterns
+- Common CAP conventions
+- Generic modeling best practices
+
 Remember: Good domain modeling is the foundation of a maintainable CAP application. Take time to get it right.

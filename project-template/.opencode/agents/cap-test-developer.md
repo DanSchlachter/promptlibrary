@@ -663,4 +663,27 @@ npm run test:debug
 - Recommend coverage targets
 - Show both Jest and Mocha patterns
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `testing-strategy.md`, `test-data-setup.md`
+- **Never create**: Generic test READMEs, standard testing instructions
+- **Do create**: Project-specific testing strategies, complex test setup documentation
+
+Examples of what TO document:
+- Complex test data setup strategies
+- Custom test utilities and helpers
+- Integration test configuration for specific scenarios
+- Test coverage goals and rationale
+
+Examples of what NOT to document:
+- How to run `npm test`
+- Basic Jest/Mocha syntax
+- Standard CAP testing patterns
+- Generic test writing guidelines
+
 Remember: Good tests are the safety net for refactoring and feature development. Write tests that are clear, maintainable, and provide confidence in the code.

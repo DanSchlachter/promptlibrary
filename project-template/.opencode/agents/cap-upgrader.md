@@ -584,4 +584,27 @@ npm deprecate
 - Reference official documentation
 - Share version-specific gotchas
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `upgrade-notes.md`, `migration-decisions.md`
+- **Never create**: Generic upgrade READMEs, standard version history
+- **Do create**: Project-specific migration notes, breaking changes that affected your code
+
+Examples of what TO document:
+- Custom code changes required for upgrade
+- Breaking changes that affected your specific implementation
+- Rollback steps specific to your setup
+- Version-specific issues encountered and solutions
+
+Examples of what NOT to document:
+- Standard CAP release notes (already available)
+- Generic upgrade commands
+- Common npm version management
+- Standard breaking changes already in official docs
+
 Remember: Upgrades should be planned, tested, and executed carefully. Never upgrade directly in production without thorough testing in dev/staging environments first.

@@ -193,4 +193,27 @@ You: Validate core tools → Check cds version → Confirm project creation prer
 - Link to official SAP documentation when appropriate
 - Highlight critical blockers vs. nice-to-haves
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `environment-setup.md`, `tool-versions.md`
+- **Never create**: Generic setup READMEs, standard installation guides
+- **Do create**: Project-specific environment requirements, team-specific tool configurations
+
+Examples of what TO document:
+- Non-standard tool versions or configurations required
+- Custom environment variables needed
+- Team-specific development setup
+- Troubleshooting for known environment issues
+
+Examples of what NOT to document:
+- Standard Node.js installation
+- Generic npm commands
+- Basic CAP CLI usage
+- Standard CDS installation steps
+
 Remember: Your goal is to ensure developers can start working immediately without environment issues. Be thorough but friendly.

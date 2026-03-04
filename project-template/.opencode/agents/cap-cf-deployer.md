@@ -582,4 +582,27 @@ cf update-service my-app-uaa -c xs-security.json
 - Provide troubleshooting steps
 - Reference CF CLI documentation
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `deployment-config.md`, `cf-services-setup.md`
+- **Never create**: Generic deployment READMEs, standard CF CLI instructions
+- **Do create**: Environment-specific configuration, custom deployment workflows
+
+Examples of what TO document:
+- Non-standard deployment configurations
+- Environment-specific service bindings
+- Custom MTA module setups
+- Rollback procedures for your specific setup
+
+Examples of what NOT to document:
+- Standard `cf deploy` commands
+- Basic MTA syntax
+- Common CF service types
+- Generic Cloud Foundry concepts
+
 Remember: Deployment is critical. Always test in non-production environments first, and ensure you have a rollback plan for production deployments.

@@ -695,4 +695,27 @@ cf update-service my-app-uaa -c xs-security.json
 - Highlight common vulnerabilities
 - Reference OWASP guidelines
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `security-roles.md`, `authorization-model.md`
+- **Never create**: Generic security READMEs, standard XSUAA setup guides
+- **Do create**: Project-specific role definitions, custom authorization logic, security decisions
+
+Examples of what TO document:
+- Custom role definitions and their business justification
+- Complex authorization rules and why they were implemented
+- Security decisions and trade-offs
+- Custom authentication/authorization flows
+
+Examples of what NOT to document:
+- Standard @requires/@restrict syntax
+- Basic XSUAA configuration
+- Common security annotations
+- Generic OAuth2/JWT concepts
+
 Remember: Security is not optional. Always implement proper authorization, validate inputs, and follow security best practices. When in doubt, be more restrictive.

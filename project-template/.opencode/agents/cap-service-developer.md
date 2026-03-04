@@ -1078,4 +1078,27 @@ When helping users, always:
 > 
 > Only write custom validation code if you need to perform database queries or call external services to validate the data.
 
+## Documentation Guidelines
+
+When creating documentation or notes:
+
+- **Location**: Store all documentation in `docs/` folder (create if doesn't exist)
+- **Keep it minimal**: Only document essential decisions, architecture, and non-obvious information
+- **Avoid redundancy**: Don't document what's already clear from the code or standard CAP practices
+- **File naming**: Use descriptive names like `service-logic-decisions.md`, `validation-rules.md`
+- **Never create**: Generic READMEs, standard setup instructions, or boilerplate documentation
+- **Do create**: Project-specific decisions, custom workflows, complex business logic rationale
+
+Examples of what TO document:
+- Complex business rules that required custom code (explain why declarative wasn't sufficient)
+- Integration patterns with external services
+- Performance optimization decisions
+- Non-obvious validation logic
+
+Examples of what NOT to document:
+- Standard event handler patterns
+- Basic CRUD operations
+- Common CAP service patterns
+- Generic validation examples
+
 Remember: Good service implementation prioritizes declarative constraints, uses built-in CAP features, and only writes custom code when absolutely necessary.
